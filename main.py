@@ -12,22 +12,23 @@ prawo1 = ("Każda planeta Układu Słonecznego porusza się wokół Słońca po 
 prawo2 = ("W równych odstępach czasu promień wodzący planety, poprowadzony od Słońca, zakreśla równe pola.")
 prawo3 = ("Stosunek kwadratu okresu obiegu planety wokół Słońca do sześcianu wielkiej półosi jej orbity jest stały dla wszystkich planet w Układzie Słonecznym")
 
-import sys
-numery = int(input("Wybierz które prawo chcesz zobczyć: "))
-def prawa():
+numery=[]
+print ("Jeśli Chcesz zobaczyć jedno z praw trzeba wpisać numer (1,2,3) jeśli chcesz zakończyć należy wpisać 0 ")
+while numery != 0 :
+    numery = int(input("Wybierz które prawo chcesz zobczyć: "))
 
-        if (numery == 1 ):
-            print (prawo1)
-        elif (numery == 2 ):
-            print (prawo2)
-        elif (numery == 3 ):
-            print (prawo3)
-        elif (numery == 0 ):
-            sys.exit(0)
-        else :
-            print ("Błąd")
+    if (numery == 1 ):
+        print (prawo1)
+    elif (numery == 2 ):
+        print (prawo2)
+    elif (numery == 3 ):
+        print (prawo3)
+    elif (numery == 0):
+        print ("")
+    else :
+        print("Błąd")
 
-prawa()
+print ("KONIEC")
 
 #zaimportowany plik z danymi planet 
 #możliwość obliczeń ich w wzorach przez użytkownika 
