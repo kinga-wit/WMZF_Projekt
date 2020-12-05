@@ -8,6 +8,24 @@ print(“Wiktoria Czechońska”)
 #napisany kod co do praw keplera ich treści z wyborem przez użytkownika
 #do wyboru 1 2 3 lub zakończ 
 
+prawo1 = ("Każda planeta Układu Słonecznego porusza się wokół Słońca po orbicie w kształcie elipsy, w której w jednym z ognisk jest Słońce.")
+prawo2 = ("W równych odstępach czasu promień wodzący planety, poprowadzony od Słońca, zakreśla równe pola.")
+prawo3 = ("Stosunek kwadratu okresu obiegu planety wokół Słońca do sześcianu wielkiej półosi jej orbity jest stały dla wszystkich planet w Układzie Słonecznym")
+
+numery = int(input("Wybierz które prawo chcesz zobczyć: "))
+def prawa():
+
+        if (numery == 1):
+            print (prawo1)
+        elif (numery == 2):
+            print (prawo2)
+        elif (numery == 3):
+            print (prawo3)
+        else :
+            print ("Błąd")
+
+prawa()
+
 #zaimportowany plik z danymi planet 
 #możliwość obliczeń ich w wzorach przez użytkownika 
 
