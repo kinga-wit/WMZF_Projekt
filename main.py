@@ -24,7 +24,7 @@ while numery != 0 :
     elif (numery == 3 ):
         print (prawo3)
     elif (numery == 0):
-        print ("")
+        break
     else :
         print("Błąd")
 
