@@ -3,6 +3,10 @@ print(“Kinga Witschenbach”)
 print(“Wiktoria Czechońska”)
 
 # w wstępie 
+
+print("Na wstępie zapoznamy się z tematem, po przez przybliżenie czym są ciała niebieskie, \n kim jest Johannes Kepler i na czy polegają jego Prawa.\n\n")
+
+      
 #ewentualne ciekawostki co do ciał niebieskich i Keplera
 
 cialaniebieskie = ("Ciało niebieskie \n każdy naturalny obiekt fizyczny oraz układ powiązanych ze sobą obiektów lub ich struktur, występujący w przestrzeni kosmicznej poza granicą atmosfery ziemskiej.\n Ciała niebieskie są przedmiotem zainteresowania astronomii.\n Wśród ciał niebieskich wyróżnia się obiekty, układy i struktury.\n Hipotetyczne ciało niebieskie rozmiarów planety to obiekt synestialny.")
@@ -19,9 +23,9 @@ while numery != 0 :
     numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
 
     if (numery == 1 ):
-        print (cialaniebieskie)
-    elif (numery == 2 ):
         print (johanneskepler)
+    elif (numery == 2 ):
+        print (cialaniebieskie)
     elif (numery == 3 ):
         print(ciekawostka1,ciekawostka2)
     elif (numery == 0 ):
