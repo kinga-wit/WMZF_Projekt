@@ -5,6 +5,32 @@ print(“Wiktoria Czechońska”)
 # w wstępie 
 #ewentualne ciekawostki co do ciał niebieskich i Keplera
 
+cialaniebieskie = ("Ciało niebieskie \n każdy naturalny obiekt fizyczny oraz układ powiązanych ze sobą obiektów lub ich struktur, występujący w przestrzeni kosmicznej poza granicą atmosfery ziemskiej.\n Ciała niebieskie są przedmiotem zainteresowania astronomii.\n Wśród ciał niebieskich wyróżnia się obiekty, układy i struktury.\n Hipotetyczne ciało niebieskie rozmiarów planety to obiekt synestialny.")
+johanneskepler = ("Johannes Kepler – niemiecki matematyk, astronom i astrolog, jedna z czołowych postaci rewolucji naukowej w XVII wieku.\n Najbardziej znany jest z nazwanych jego nazwiskiem praw ruchu planet, skodyfikowanych przez późniejszych astronomów na podstawie jego prac Astronomia nova, Harmonices Mundi i Epitome astronomiae Copernicanae.\n Prawa te wykorzystano do potwierdzenia słuszności teorii grawitacji Isaaca Newtona.")
+ciekawostka1 =("Światło dochodzi w 8 minut ze Słońca do Ziemi.\n")
+ciekawostka2 =("Na Wenus zamiast opadów śniegu, są opady metalu.")
+numery=[]
+print("Jeśli chcesz dowiedzieć się kim był Joannes Kepler wybierz 1")
+print("Jeśli chcesz dowiedzieć się co to ciała niebieskie wybierz 2")
+print("Jeśli chcesz zobczyć ciekawostki wybierz 3")
+print("Jeśli chcesz zakończyć należy wpisać 0")
+
+while numery != 0 :
+    numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
+
+    if (numery == 1 ):
+        print (cialaniebieskie)
+    elif (numery == 2 ):
+        print (johanneskepler)
+    elif (numery == 3 ):
+        print(ciekawostka1,ciekawostka2)
+    elif (numery == 0 ):
+        break
+    else :
+        print("Błąd")
+
+print ("KONIEC")
+
 #napisany kod co do praw keplera ich treści z wyborem przez użytkownika
 #do wyboru 1 2 3 lub zakończ 
 
