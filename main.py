@@ -4,7 +4,7 @@ print(“Wiktoria Czechońska”)
 
 # w wstępie 
 
-print("Na wstępie zapoznamy się z tematem, po przez przybliżenie czym są ciała niebieskie, \n kim jest Johannes Kepler i na czy polegają jego Prawa.\n\n")
+print("Na wstępie zapoznamy się z tematem, po przez przybliżenie czym są ciała niebieskie, \n kim jest Johannes Kepler i na czym polegają jego Prawa.\n\n")
 
       
 #ewentualne ciekawostki co do ciał niebieskich i Keplera
