@@ -33,7 +33,7 @@ while numery != 0 :
     else :
         print("Błąd")
 
-print ("KONIEC")
+print ("KONIEC\n")
 
 #napisany kod co do praw keplera ich treści z wyborem przez użytkownika
 #do wyboru 1 2 3 lub zakończ 
@@ -45,7 +45,7 @@ prawo3 = ("Stosunek kwadratu okresu obiegu planety wokół Słońca do sześcian
 numery=[]
 print ("Jeśli Chcesz zobaczyć jedno z praw trzeba wpisać numer (1,2,3) jeśli chcesz zakończyć należy wpisać 0 ")
 while numery != 0 :
-    numery = int(input("Wybierz które prawo chcesz zobczyć: "))
+    numery = int(input("\nWybierz które prawo chcesz zobczyć: "))
 
     if (numery == 1 ):
         print (prawo1)
@@ -58,7 +58,7 @@ while numery != 0 :
     else :
         print("Błąd")
 
-print ("KONIEC")
+print ("KONIEC\n")
         
 
 #zaimportowany plik z danymi planet 
@@ -85,7 +85,7 @@ aj= sheet['B3'].value
 #definicja funkci na odległość między środkiem elipsy a ogniskiem (c=ea) i wybór przez użytkownika, dla której planety chce to policzyc
 #+ pytanie, czy chce policzyc dla kolejnej planety czy przejść dalej
 
-
+#import numpy as np
 numery=[]
 print ("Korzystając z I Prawa Keplera możemy obliczyć odległość między środkiem elipsy a jej ogniskiem dla wybranej planety")
 print ("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego-2, dla Jowisza- 3 a jeśli chcesz zakończyć wpisz 0 ")
