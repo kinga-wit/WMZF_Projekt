@@ -86,6 +86,40 @@ aj= sheet['B3'].value
 #+ pytanie, czy chce policzyc dla kolejnej planety czy przejść dalej
 
 
+numery=[]
+print ("Korzystając z I Prawa Keplera możemy obliczyć odległość między środkiem elipsy a jej ogniskiem dla wybranej planety")
+print ("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego-2, dla Jowisza- 3 a jeśli chcesz zakończyć wpisz 0 ")
+while numery != 0 :
+    numery = int(input("Wpisz numer planety, którą wybierasz: "))
+
+    if (numery == 1 ):
+            e=ez
+            a=az
+            float(a)
+            float(e)
+            c= e * a
+            print("Odległość między środkiem elipsy a jej ogniskiem dla Ziemi wynosi: ", c)
+    elif (numery == 2 ):
+            e=em
+            a=am
+            float(a)
+            float(e)
+            c= e * a
+            print("Odległość między środkiem elipsy a jej ogniskiem dla Merkurego wynosi: ", c)
+           
+    elif (numery == 3 ):
+            e=ej
+            a=aj
+            float(a)
+            float(e)
+            c= e * a
+            print("Odległość między środkiem elipsy a jej ogniskiem dla Jowisza wynosi: ", c)
+        
+    elif (numery == 0):
+        break
+    else :
+        print("Błąd")
+
 #definicja funkcji dowodzącej stały stosunek promieni i okresu, i wybór przez użytkownika, dla których planet chce to policzyc
 
 
