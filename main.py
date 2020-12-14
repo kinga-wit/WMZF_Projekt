@@ -82,15 +82,23 @@ ej= sheet['C3'].value
 Tj= sheet['A3'].value
 aj= sheet['B3'].value
 
-#definicja funkci i wykorzystanie danych z pliku do obliczeń
+#definicja funkci na odległość między środkiem elipsy a ogniskiem (c=ea) i wybór przez użytkownika, dla której planety chce to policzyc
+#+ pytanie, czy chce policzyc dla kolejnej planety czy przejść dalej
 
-#przedstawienie ruchu planet wokół słońca
+
+#definicja funkcji dowodzącej stały stosunek promieni i okresu, i wybór przez użytkownika, dla których planet chce to policzyc
+
+
 #ewentualny wykres
 
-#przedstawienie symulacji ruchu ciał na wykresie 
+
+
+#przedstawienie symulacji ruchu planet na wykresie 
+
+
 
 #jako dodatek do programu gra o temacie astronomii
 
-# Ewentualny dodatkowy program...
+#Ewentualny dodatkowy program...
 
 #ciekawe zakończenie programu 
