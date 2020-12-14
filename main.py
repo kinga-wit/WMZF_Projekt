@@ -59,9 +59,19 @@ while numery != 0 :
         print("Błąd")
 
 print ("KONIEC")
+        
 
-#zaimportowany plik z danymi planet 
-#możliwość obliczeń ich w wzorach przez użytkownika 
+#zaimportowprint(cell.value)any plik z danymi planet 
+
+from openpyxl import load_workbook
+wb = load_workbook('dane.planety.xlsx')
+sheet = wb.active
+
+for row in sheet.iter_rows(min_row=1, min_col=1, max_row=3, max_col=5):
+    for cell in row:
+      print(cell.value)
+
+#definicja funkci i wykorzystanie danych z pliku do obliczeń
 
 #przedstawienie ruchu planet wokół słońca
 #ewentualny wykres
