@@ -61,15 +61,26 @@ while numery != 0 :
 print ("KONIEC")
         
 
-#zaimportowprint(cell.value)any plik z danymi planet 
+#zaimportowany plik z danymi planet 
 
 from openpyxl import load_workbook
 wb = load_workbook('dane.planety.xlsx')
 sheet = wb.active
 
-for row in sheet.iter_rows(min_row=1, min_col=1, max_row=3, max_col=5):
-    for cell in row:
-      print(cell.value)
+#Dane- Ziemia
+ez= sheet['C1'].value
+Tz= sheet['A1'].value
+az= sheet['B1'].value
+
+#Dane- Merkury
+em= sheet['C2'].value
+Tm= sheet['A2'].value
+am= sheet['B2'].value
+
+#Dane- Jowisz
+ej= sheet['C3'].value
+Tj= sheet['A3'].value
+aj= sheet['B3'].value
 
 #definicja funkci i wykorzystanie danych z pliku do obliczeń
 
