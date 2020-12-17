@@ -131,7 +131,6 @@ from openpyxl import load_workbook
 wb = load_workbook('dane.planety.xlsx')
 sheet = wb.active
 
-
 # Dane- Ziemia
 ez = sheet['C1'].value
 Tz = sheet['A1'].value
@@ -149,13 +148,13 @@ aj = sheet['B3'].value
 
 numery =[]
 
-print("Korzystając z III Prawa Keplera można po przez przyrównanie dwóch planet obliczyć okres jednej z nich, ponieważ stosunek kwadratu okresu planety do sześcianu wielkiej półosi jej orbity jest stały dla wszystkich planet w Układzie Słonecznym\n ")
+print("Korzystając z III Prawa Keplera można po przez przyrównanie dwóch planet obliczyć okres jednej z nich, \n ponieważ stosunek kwadratu okresu planety do sześcianu wielkiej półosi jej orbity jest stały dla wszystkich planet w Układzie Słonecznym\n ")
 print("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego 2, dla Jowisza 3 a jeśli chcesz zakończyć wpisz 0 \n")
 
 import math
 while numery != 0:
 
-    numery = int(input("Wpisz numer planety, którą wybierasz: "))
+    numery = int(input("\nWpisz numer planety, którą wybierasz: "))
 
     if (numery == 1):
         T= Tm**2
@@ -177,7 +176,7 @@ while numery != 0:
         a = (am ** 3 / aj ** 3)
         float(a)
         float(T)
-        Tz = math.sqrt(T*a)
+        Tm = math.sqrt(T*a)
         print("\nOdległość między środkiem elipsy a jej ogniskiem dla Merkurego przyrównując do Jowisza wynosi: ", Tm)
 
         T = Tz ** 2
