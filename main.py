@@ -1,6 +1,6 @@
-print(“Symulacja ruchu ciał niebieskich z wykorzystaniem Praw Keplera”)     
-print(“Kinga Witschenbach”)
-print(“Wiktoria Czechońska”)
+print("Symulacja ruchu ciał niebieskich z wykorzystaniem Praw Keplera")     
+print("Kinga Witschenbach")
+print("Wiktoria Czechońska")
 
 # w wstępie 
 
