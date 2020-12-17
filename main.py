@@ -119,8 +119,97 @@ while numery != 0 :
         break
     else :
         print("Błąd")
+        
+print ("KONIEC\n")
+            
+   
 
 #definicja funkcji dowodzącej stały stosunek promieni i okresu, i wybór przez użytkownika, dla których planet chce to policzyc
+
+
+from openpyxl import load_workbook
+wb = load_workbook('dane.planety.xlsx')
+sheet = wb.active
+
+
+# Dane- Ziemia
+ez = sheet['C1'].value
+Tz = sheet['A1'].value
+az = sheet['B1'].value
+
+# Dane- Merkury
+em = sheet['C2'].value
+Tm = sheet['A2'].value
+am = sheet['B2'].value
+
+# Dane- Jowisz
+ej = sheet['C3'].value
+Tj = sheet['A3'].value
+aj = sheet['B3'].value
+
+numery =[]
+
+print("Korzystając z III Prawa Keplera można po przez przyrównanie dwóch planet obliczyć okres jednej z nich, ponieważ stosunek kwadratu okresu planety do sześcianu wielkiej półosi jej orbity jest stały dla wszystkich planet w Układzie Słonecznym\n ")
+print("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego 2, dla Jowisza 3 a jeśli chcesz zakończyć wpisz 0 \n")
+
+import math
+while numery != 0:
+
+    numery = int(input("Wpisz numer planety, którą wybierasz: "))
+
+    if (numery == 1):
+        T= Tm**2
+        a= (az ** 3/ am ** 3)
+        float(a)
+        float(T)
+        Tz = math.sqrt(T*a)
+        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Ziemi przyrównując do Merkurego wynosi: ", Tz)
+
+        T = Tj ** 2
+        a = (az ** 3 / aj ** 3)
+        float(a)
+        float(T)
+        Tz = math.sqrt(T*a)
+        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Ziemi przyrównując do Jowisza wynosi: ", Tz)
+    elif (numery == 2):
+
+        T = Tj ** 2
+        a = (am ** 3 / aj ** 3)
+        float(a)
+        float(T)
+        Tz = math.sqrt(T*a)
+        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Merkurego przyrównując do Jowisza wynosi: ", Tm)
+
+        T = Tz ** 2
+        a = (am ** 3 / az ** 3)
+        float(a)
+        float(T)
+        Tm = math.sqrt(T*a)
+        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Merkurego przyrównując do Ziemii wynosi: ", Tm)
+
+    elif (numery == 3):
+
+        T = Tm ** 2
+        a = (aj ** 3 / am ** 3)
+        float(a)
+        float(T)
+        Tj = math.sqrt(T*a)
+        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Jowisza przyrównując do Merkurego wynosi: ", Tj)
+
+        T = Tz ** 2
+        a = (aj ** 3 / az ** 3)
+        float(a)
+        float(T)
+        Tj = math.sqrt(T*a)
+        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Jowisza przyrównując do Ziemii wynosi: ", Tj)
+
+    elif (numery == 0):
+        break
+    else:
+        print("\nBłąd")
+
+print("KONIEC\n")
+
 
 
 #ewentualny wykres
