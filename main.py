@@ -88,9 +88,9 @@ aj= sheet['B3'].value
 #import numpy as np
 numery=[]
 print ("Korzystając z I Prawa Keplera możemy obliczyć odległość między środkiem elipsy a jej ogniskiem dla wybranej planety")
-print ("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego-2, dla Jowisza- 3 a jeśli chcesz zakończyć wpisz 0 ")
+print ("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego-2, dla Jowisza-3 a jeśli chcesz zakończyć wpisz 0 ")
 while numery != 0 :
-    numery = int(input("Wpisz numer planety, którą wybierasz: "))
+    numery = int(input("\nWpisz numer planety, którą wybierasz: "))
 
     if (numery == 1 ):
             e=ez
