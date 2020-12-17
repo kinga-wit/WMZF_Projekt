@@ -162,14 +162,14 @@ while numery != 0:
         float(a)
         float(T)
         Tz = math.sqrt(T*a)
-        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Ziemi przyrównując do Merkurego wynosi: ", Tz)
+        print("\nOkres dla Ziemi przyrównując ją do Merkurego wynosi: ", Tz)
 
         T = Tj ** 2
         a = (az ** 3 / aj ** 3)
         float(a)
         float(T)
         Tz = math.sqrt(T*a)
-        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Ziemi przyrównując do Jowisza wynosi: ", Tz)
+        print("\nOkres dla Ziemi przyrównując ją do Jowisza wynosi: ", Tz)
     elif (numery == 2):
 
         T = Tj ** 2
@@ -177,14 +177,14 @@ while numery != 0:
         float(a)
         float(T)
         Tm = math.sqrt(T*a)
-        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Merkurego przyrównując do Jowisza wynosi: ", Tm)
+        print("\nOkres dla Merkurego przyrównując go do Jowisza wynosi: ", Tm)
 
         T = Tz ** 2
         a = (am ** 3 / az ** 3)
         float(a)
         float(T)
         Tm = math.sqrt(T*a)
-        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Merkurego przyrównując do Ziemii wynosi: ", Tm)
+        print("\nOkres dla Merkurego przyrównując go do Ziemii wynosi: ", Tm)
 
     elif (numery == 3):
 
@@ -193,14 +193,14 @@ while numery != 0:
         float(a)
         float(T)
         Tj = math.sqrt(T*a)
-        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Jowisza przyrównując do Merkurego wynosi: ", Tj)
+        print("\nOkres dla Jowisza przyrównując go do Merkurego wynosi: ", Tj)
 
         T = Tz ** 2
         a = (aj ** 3 / az ** 3)
         float(a)
         float(T)
         Tj = math.sqrt(T*a)
-        print("\nOdległość między środkiem elipsy a jej ogniskiem dla Jowisza przyrównując do Ziemii wynosi: ", Tj)
+        print("\nOkres Jowisza przyrównując go do Ziemii wynosi: ", Tj)
 
     elif (numery == 0):
         break
