@@ -206,7 +206,7 @@ while numery != 0:
         break
     else:
         print("\nBłąd")
-
+print("Z prawa tego wynika, że im większa orbita, tym dłuższy okres obiegu, oraz że prędkość liniowa na orbicie jest odwrotnie proporcjonalna do pierwiastka promienia orbity")
 print("KONIEC\n")
 
 
