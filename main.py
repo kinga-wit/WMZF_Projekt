@@ -89,9 +89,14 @@ aj= sheet['B3'].value
 numery=[]
 print ("Korzystając z I Prawa Keplera możemy obliczyć odległość między środkiem elipsy a jej ogniskiem dla wybranej planety")
 print ("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego-2, dla Jowisza-3 a jeśli chcesz zakończyć wpisz 0 ")
-while numery != 0 :
-    numery = int(input("\nWpisz numer planety, którą wybierasz: "))
-
+while True:
+    try:
+        numery = int(input("\nWpisz numer planety, którą wybierasz: "))
+        break
+    except ValueError:
+        print("Wprowadzono błędny typ danych, spróbuj ponownie")
+    
+    
     if (numery == 1 ):
             e=ez
             a=az
@@ -152,9 +157,13 @@ print("Korzystając z III Prawa Keplera można po przez przyrównanie dwóch pla
 print("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego 2, dla Jowisza 3 a jeśli chcesz zakończyć wpisz 0 \n")
 
 import math
-while numery != 0:
-
-    numery = int(input("\nWpisz numer planety, którą wybierasz: "))
+while True:
+    try:
+        numery = int(input("\nWpisz numer planety, którą wybierasz: "))
+        break
+    except ValueError:
+        print("Wprowadzono błędny typ danych, spróbuj ponownie")
+ 
 
     if (numery == 1):
         T= Tm**2
