@@ -19,9 +19,13 @@ print("Jeśli chcesz dowiedzieć się co to ciała niebieskie wybierz 2")
 print("Jeśli chcesz zobczyć ciekawostki wybierz 3")
 print("Jeśli chcesz zakończyć należy wpisać 0")
 
-while numery != 0 :
-    numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
-
+while True:
+    try:
+        numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
+        break
+    except ValueError:
+        print("Wprowadzono błędny typ danych, spróbuj ponownie")
+    
     if (numery == 1 ):
         print (johanneskepler)
     elif (numery == 2 ):
@@ -44,9 +48,13 @@ prawo3 = ("Stosunek kwadratu okresu obiegu planety wokół Słońca do sześcian
 
 numery=[]
 print ("Jeśli Chcesz zobaczyć jedno z praw trzeba wpisać numer (1,2,3) jeśli chcesz zakończyć należy wpisać 0 ")
-while numery != 0 :
-    numery = int(input("\nWybierz które prawo chcesz zobczyć: "))
-
+while True:
+    try:
+        numery = int(input("\nWybierz które prawo chcesz zobczyć: "))
+        break
+    except ValueError:
+        print("Wprowadzono błędny typ danych, spróbuj ponownie")
+    
     if (numery == 1 ):
         print (prawo1)
     elif (numery == 2 ):
@@ -127,7 +135,23 @@ while True:
         
 print ("KONIEC\n")
             
-   
+#wykres
+import matplotlib.pyplot as plt
+Rz= sheet['E1'].value
+Rm= sheet['E2'].value
+Rj= sheet['E3'].value 
+
+y = [ez*az,em*am,ej*aj]
+x = [Rz,Rm,Rj]
+plt.plot(x,y)
+plt.plot(x,y,color='r',lw = 2, ls='-')
+plt.title('Wykres przedstawiający zależność odległości między \n środkiem elipsy a jej ogniskiem od promienia danej planety ')
+plt.text(ez*az,Rz,'Ziemia',style='italic')
+plt.text(em*am,Rm,'Merkury',style='italic')
+plt.text(ej*aj,Rj,'Jowisz',style='italic')
+plt.grid(True)
+plt.show()
+            
 
 #definicja funkcji dowodzącej stały stosunek promieni i okresu, i wybór przez użytkownika, dla których planet chce to policzyc
 
