@@ -19,13 +19,9 @@ print("Jeśli chcesz dowiedzieć się co to ciała niebieskie wybierz 2")
 print("Jeśli chcesz zobczyć ciekawostki wybierz 3")
 print("Jeśli chcesz zakończyć należy wpisać 0")
 
-while True:
-    try:
-        numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
-        break
-    except ValueError:
-        print("Wprowadzono błędny typ danych, spróbuj ponownie")
-    
+while numery!=0:
+    numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
+       
     if (numery == 1 ):
         print (johanneskepler)
     elif (numery == 2 ):
@@ -48,12 +44,8 @@ prawo3 = ("Stosunek kwadratu okresu obiegu planety wokół Słońca do sześcian
 
 numery=[]
 print ("Jeśli Chcesz zobaczyć jedno z praw trzeba wpisać numer (1,2,3) jeśli chcesz zakończyć należy wpisać 0 ")
-while True:
-    try:
-        numery = int(input("\nWybierz które prawo chcesz zobczyć: "))
-        break
-    except ValueError:
-        print("Wprowadzono błędny typ danych, spróbuj ponownie")
+while numery!=0:
+    numery = int(input("\nWybierz które prawo chcesz zobczyć: "))
     
     if (numery == 1 ):
         print (prawo1)
