@@ -138,9 +138,6 @@ x = [Rz,Rm,Rj]
 plt.plot(x,y)
 plt.plot(x,y,color='r',lw = 2, ls='-')
 plt.title('Wykres przedstawiający zależność odległości między \n środkiem elipsy a jej ogniskiem od promienia danej planety ')
-plt.text(ez*az,Rz,'Ziemia',style='italic')
-plt.text(em*am,Rm,'Merkury',style='italic')
-plt.text(ej*aj,Rj,'Jowisz',style='italic')
 plt.grid(True)
 plt.show()
             
