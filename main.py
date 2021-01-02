@@ -366,6 +366,18 @@ while numery != 0:
 
 print("KONIEC\n")
 
+#WYKRES 
+
+import matplotlib.pyplot as plt
+
+y = [ez*az,em*am,ej*aj]
+x = ['Ziemia', 'Mars', 'Jowisz']
+plt.plot(x,y)
+plt.plot(x,y,color='r',lw = 2, ls='-')
+plt.title('Wykres przedstawiający odległość między środkiem \n elipsy a jej ogniskiem dla danej planety ')
+plt.grid(True)
+plt.show()
+
 #KOD 4
 
 from openpyxl import load_workbook
