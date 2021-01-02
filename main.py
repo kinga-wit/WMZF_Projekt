@@ -225,7 +225,248 @@ while True:
 print("KONIEC\n")
 
 #MINI GRA
+print("Czas na sprawdzenie wiedzy o Kosmosie!\n")
+print("Zasady gry są proste: \nWybierasz poziom trudności gry w którą chcesz zagrać (Prostą czy Trudną)")
+print("\nW obu grach należy odpowiedzieć na jedno pytanie.")
+print("\nBędzie liczył się za równo czas w którym odpowiecie prawidłowo na pytanie jak i ilość prób.")
 
+
+grac = []
+while grac != "N" :
+
+    print("\n(P=prosta/T=Trudna/N=Nie chcę grać)")
+    grac = input("\nCzas wybrać poziom trudności gry: \n")
+
+    if (grac == "P") :
+        def czy_a_jest_duzo_mniejsze_od_b(a, b):
+            if b - a > 2000:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_mniejsze_od_b(a, b):
+            if b - a > 100:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_troche_mniejsze_od_b(a, b):
+            if b - a > 10:
+                return True
+            else:
+                return False
+
+        def czy_a_jest_minimalnie_mniejsze_od_b(a, b):
+            if b-a > 0:
+                return True
+            else:
+                return False
+
+        def czy_a_jest_minimalnie_wieksze_od_b(a, b):
+            if a-b > 0:
+                return True
+            else:
+                return False
+
+        def czy_a_jest_troche_wieksze_od_b(a, b):
+            if a - b > 10:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_wieksze_od_b(a, b):
+            if a - b > 100:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_duzo_wieksze_od_b(a, b):
+            if a - b > 2000:
+                return True
+            else:
+                return False
+
+
+        import time
+        start = time.time()
+
+
+        def start_gry():
+            prawidlowa = 6371
+            szukana = -1
+            ilosc = 0
+            while prawidlowa != szukana:
+                print("Ile wynosi promień Ziemii w km: ")
+                szukana = int(input())
+
+                if czy_a_jest_duzo_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest duzo mniejsza od prawidłowej")
+
+                if czy_a_jest_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest mniejsza od prawidłowej")
+
+                if czy_a_jest_troche_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest troche mniejsza od prawidłowej")
+
+                if czy_a_jest_minimalnie_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnięta jest minimalnie mniejsza od prawidłowej")
+
+                if czy_a_jest_minimalnie_wieksze_od_b(szukana,prawidlowa):
+                    print("Zgadnieta jest minimalnie wieksza od prawidłowej")
+
+                if czy_a_jest_troche_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest troche wieksza od prawidłowej")
+
+                if czy_a_jest_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest wieksza od prawidłowej")
+
+                if czy_a_jest_duzo_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest duzo wieksza od prawidłowej")
+
+                ilosc += 1
+
+            print(f"Gratulacje \nIlosc podjetych prob {ilosc}")
+
+
+        start_gry()
+
+        end = time.time()
+        t = end - start
+        print(f"Twój czas wynosi {t}")
+
+
+    elif (grac == "T") :
+
+        def czy_a_jest_o_wiele_mniejsze_od_b(a, b):
+            if b - a > 50000:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_duzo_mniejsze_od_b(a, b):
+            if b - a > 5000:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_mniejsze_od_b(a, b):
+            if b - a > 1000:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_troche_mniejsze_od_b(a, b):
+            if b - a > 10:
+                return True
+            else:
+                return False
+
+        def czy_a_jest_minimalnie_mniejsze_od_b(a, b):
+            if b-a > 0:
+                return True
+            else:
+                return False
+
+        def czy_a_jest_minimalnie_wieksze_od_b(a, b):
+            if a-b > 0:
+                return True
+            else:
+                return False
+
+        def czy_a_jest_troche_wieksze_od_b(a, b):
+            if a - b > 10:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_wieksze_od_b(a, b):
+            if a - b > 1000:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_duzo_wieksze_od_b(a, b):
+            if a - b > 5000:
+                return True
+            else:
+                return False
+
+
+        def czy_a_jest_o_wiele_wieksze_od_b(a, b):
+            if a - b > 50000:
+                return True
+            else:
+                return False
+
+
+        import time
+        start = time.time()
+
+        def start_gry():
+            prawidlowa = 69911
+            szukana = -1
+            ilosc = 0
+            while prawidlowa != szukana:
+                print("Ile wynosi promień Jowisza w km?")
+                szukana = int(input())
+                if czy_a_jest_o_wiele_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnięta jest o wiele mniejsza od prawidłowej")
+
+                if czy_a_jest_duzo_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest duzo mniejsza od prawidłowej")
+
+                if czy_a_jest_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest mniejsza od prawidłowej")
+
+                if czy_a_jest_minimalnie_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnięta jest minimalnie mniejsza od prawidłowej")
+
+                if czy_a_jest_minimalnie_wieksze_od_b(szukana,prawidlowa):
+                    print("Zgadnieta jest minimalnie wieksza od prawidłowej")
+
+                if czy_a_jest_troche_mniejsze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest troche mniejsza od prawidłowej")
+
+                if czy_a_jest_troche_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest troche wieksza od prawidłowej")
+
+                if czy_a_jest_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest wieksza od prawidłowej")
+
+                if czy_a_jest_duzo_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest duzo wieksza od prawidłowej")
+
+                if czy_a_jest_o_wiele_wieksze_od_b(szukana, prawidlowa):
+                    print("Zgadnieta jest o wiele wieksza od prawidlowej")
+
+                ilosc += 1
+
+            print(f"Gratulacje \nIlosc podjetych prob {ilosc}")
+
+
+        start_gry()
+
+        end = time.time()
+        t = end - start
+        print(f"Twój czas wynosi {t}")
+
+    elif (grac == "N"):
+        break
+
+    else :
+        print("Wystąpił Błąd")
+
+
+print("Koniec Gry!\n")
 #SYMULACJA LUB WYKRES PRZEDSTAWIAJĄCY RUCH PLANET 
 
 #ciekawe zakończenie programu 
