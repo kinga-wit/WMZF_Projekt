@@ -224,6 +224,28 @@ while True:
 
 print("KONIEC\n")
 
+#WYKRES 2
+
+import matplotlib.pyplot as plt
+import math
+from pylab import *
+
+Tzm = math.sqrt((Tm**2)*(az ** 3/ am ** 3))
+Tzj = math.sqrt((Tj**2)*(az ** 3/ aj ** 3))
+Tmj = math.sqrt((Tj**2)*(am ** 3/ aj ** 3))
+Tmz = math.sqrt((Tz**2)*(am ** 3/ az ** 3))
+Tjm = math.sqrt((Tm**2)*(aj ** 3/ am ** 3))
+Tjz = math.sqrt((Tz**2)*(aj ** 3/ az ** 3))
+
+y = [Tzm/Tzj,Tmj/Tmz,Tjm/Tjz]
+x = ['Ziemia','Merkury','Jowisz']
+plt.plot(x,y)
+axis(['Ziemia', 'Jowisz', -5, 5])
+plt.plot(x,y,color='g',lw = 1, ls='-')
+plt.title('Wykres przedstawiający stosunek okresów obiegu wokół Słońca dla danej planety \n przyrównując ją do dwóch pozostałych planet. ')
+plt.grid(True)
+plt.show()
+
 #MINI GRA
 print("Czas na sprawdzenie wiedzy o Kosmosie!\n")
 print("Zasady gry są proste: \nWybierasz poziom trudności gry w którą chcesz zagrać (Prostą czy Trudną)")
