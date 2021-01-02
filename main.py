@@ -163,7 +163,7 @@ import math
 while True:
     try:
         numery = int(input("\nWpisz numer planety, którą wybierasz: "))
-        break
+        
     except ValueError:
         print("Wprowadzono błędny typ danych, spróbuj ponownie")
  
