@@ -60,7 +60,7 @@ print ("KONIEC\n")
 
 
 from openpyxl import load_workbook
-wb = load_workbook('dane.planety.xlsx')
+wb = load_workbook('dane_planety.xlsx')
 sheet = wb.active
 
 
@@ -134,7 +134,7 @@ plt.show()
 #KOD 4
 
 from openpyxl import load_workbook
-wb = load_workbook('dane.planety.xlsx')
+wb = load_workbook('dane_planety.xlsx')
 sheet = wb.active
 
 # Dane- Ziemia
