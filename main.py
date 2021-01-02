@@ -405,10 +405,13 @@ print("Korzystając z III Prawa Keplera można po przez przyrównanie dwóch pla
 print("Jeśli chcesz poznać tę wielkość dla Ziemi wybierz 1, dla Merkurego 2, dla Jowisza 3 a jeśli chcesz zakończyć wpisz 0 \n")
 
 import math
-while numery != 0:
-
-    numery = int(input("\nWpisz numer planety, którą wybierasz: "))
-
+while True:
+    try:
+        numery = int(input("\nWpisz numer planety, którą wybierasz: "))
+        break
+    except ValueError:
+        print("Wprowadzono błędny typ danych, spróbuj ponownie")
+ 
     if (numery == 1):
         T= Tm**2
         a= (az ** 3/ am ** 3)
