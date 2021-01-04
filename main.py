@@ -489,6 +489,25 @@ while grac != "N" :
 
 
 print("Koniec Gry!\n")
-#SYMULACJA LUB WYKRES PRZEDSTAWIAJĄCY RUCH PLANET 
 
+#SYMULACJA LUB WYKRES PRZEDSTAWIAJĄCY RUCH PLANET 
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+
+
+mpl.rcParams['legend.fontsize'] = 10
+fig = plt.figure()
+ax = Axes3D(fig)
+
+theta = np.linspace(-4 * np.pi, 4 * np.pi, 100)
+z = np.linspace(0, 365.242, 100)
+r = 149600000
+x = r * np.sin(theta)
+y = r * np.cos(theta)
+ax.plot(x, y, z, label="Ruch Ziemii wokół Słońca")
+ax.legend()
+
+plt.show()
 #ciekawe zakończenie programu 
