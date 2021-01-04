@@ -2,6 +2,9 @@ print("Symulacja ruchu ciał niebieskich z wykorzystaniem Praw Keplera")
 print("Kinga Witschenbach")
 print("Wiktoria Czechońska")
 
+import time
+print(time.asctime())
+
 #WSTĘP
 print("Na wstępie zapoznamy się z tematem, po przez przybliżenie czym są ciała niebieskie, \n kim jest Johannes Kepler i na czy polegają jego Prawa.")
 print("\n\n")
