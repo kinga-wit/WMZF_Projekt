@@ -10,8 +10,8 @@ print("Na wstępie zapoznamy się z tematem, po przez przybliżenie czym są cia
 print("\n\n")
 
 #KOD 1
-cialaniebieskie = ("Ciało niebieskie \n każdy naturalny obiekt fizyczny oraz układ powiązanych ze sobą obiektów lub ich struktur, występujący w przestrzeni kosmicznej poza granicą atmosfery ziemskiej.\n Ciała niebieskie są przedmiotem zainteresowania astronomii.\n Wśród ciał niebieskich wyróżnia się obiekty, układy i struktury.\n Hipotetyczne ciało niebieskie rozmiarów planety to obiekt synestialny.")
-johanneskepler = ("Johannes Kepler – niemiecki matematyk, astronom i astrolog, jedna z czołowych postaci rewolucji naukowej w XVII wieku.\n Najbardziej znany jest z nazwanych jego nazwiskiem praw ruchu planet, skodyfikowanych przez późniejszych astronomów na podstawie jego prac Astronomia nova, Harmonices Mundi i Epitome astronomiae Copernicanae.\n Prawa te wykorzystano do potwierdzenia słuszności teorii grawitacji Isaaca Newtona.")
+cialaniebieskie = ("Ciało niebieskie \n każdy naturalny obiekt fizyczny oraz układ powiązanych ze sobą obiektów lub ich struktur,\n występujący w przestrzeni kosmicznej poza granicą atmosfery ziemskiej.\n Ciała niebieskie są przedmiotem zainteresowania astronomii.\n Wśród ciał niebieskich wyróżnia się obiekty, układy i struktury.\n Hipotetyczne ciało niebieskie rozmiarów planety to obiekt synestialny.")
+johanneskepler = ("Johannes Kepler – niemiecki matematyk, astronom i astrolog, jedna z czołowych postaci rewolucji naukowej w XVII wieku.\n Najbardziej znany jest z nazwanych jego nazwiskiem praw ruchu planet, skodyfikowanych przez późniejszych astronomów na podstawie jego prac Astronomia nova,\n Harmonices Mundi i Epitome astronomiae Copernicanae.\n Prawa te wykorzystano do potwierdzenia słuszności teorii grawitacji Isaaca Newtona.")
 ciekawostka1 =("Światło dochodzi w 8 minut ze Słońca do Ziemi.\n")
 ciekawostka2 =("Na Wenus zamiast opadów śniegu, są opady metalu.")
 numery=[]
@@ -21,7 +21,7 @@ print("Jeśli chcesz zobczyć ciekawostki wybierz 3")
 print("Jeśli chcesz zakończyć należy wpisać 0")
 
 while numery != 0 :
-    numery = int(input("\nWybierz o czym chcesz się dowiedzieć : "))
+    numery = int(input("\nWybierz o czym chcesz się dowiedzieć : \n"))
 
     if (numery == 1 ):
         print (cialaniebieskie)
