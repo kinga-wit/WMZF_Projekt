@@ -259,7 +259,7 @@ print("\nBędzie liczył się za równo czas w którym odpowiecie prawidłowo na
 grac = []
 while grac != "N" :
 
-    print("\n(P=prosta/T=Trudna/N=Nie chcę grać)")
+    print("\n(P=prosty/T=Trudny/N=Nie chcę grać)")
     grac = input("\nCzas wybrać poziom trudności gry: \n")
 
     if (grac == "P") :
