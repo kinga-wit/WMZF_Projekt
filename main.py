@@ -493,7 +493,7 @@ while grac != "N" :
 
 print("Koniec Gry!\n")
 
-#SYMULACJA LUB WYKRES PRZEDSTAWIAJĄCY RUCH PLANET 
+#WYKRES PRZEDSTAWIAJĄCY RUCH PLANETY
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -513,4 +513,21 @@ ax.plot(x, y, z, label="Ruch Ziemii wokół Słońca")
 ax.legend()
 
 plt.show()
-#ciekawe zakończenie programu 
+
+#SYMULACJA PRZEDSTAWIAJĄCA RUCH PLANETY
+from turtle import *
+import math
+dot(70, "red")
+up()
+setposition(300,0)
+down()
+color("green","green")
+shape("circle")
+loop= True
+xvel = 0
+yvel = 1
+while loop == True:
+    xvel += math.cos(math.radians(towards(0,0)))*(1000/(xcor()**2 + ycor()**2))
+    yvel += math.sin(math.radians(towards(0,0)))*(1000/(xcor()**2 + ycor()**2))
+    setposition(xcor()+xvel,ycor()+yvel)
+
