@@ -100,16 +100,16 @@ while numery != 0:
         c = e * a
         print("Odległość między środkiem elipsy a jej ogniskiem dla Ziemi wynosi: ", c)
     elif (numery == 2):
-        e = em
-        a = am
+        e = ej
+        a = aj
         float(a)
         float(e)
         c = e * a
         print("Odległość między środkiem elipsy a jej ogniskiem dla Merkurego wynosi: ", c)
 
     elif (numery == 3):
-        e = ej
-        a = aj
+        e = em
+        a = am
         float(a)
         float(e)
         c = e * a
@@ -126,7 +126,7 @@ print("KONIEC\n")
 
 import matplotlib.pyplot as plt
 
-y = [ez*az,em*am,ej*aj]
+y = [ez*az,ej*aj,em*am]
 x = ['Ziemia', 'Mars', 'Jowisz']
 plt.plot(x,y)
 plt.plot(x,y,color='r',lw = 2, ls='-')
